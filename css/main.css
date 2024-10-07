@@ -2,55 +2,24 @@
 body {
     margin: 0;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    background-color: #f0f4f8; /* Light background for a fresh look */
+    background-image: url('/path/to/gis-masters.jpg'); /* Replace with the correct path */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
     color: #333;
-}
-
-/* Navigation Bar */
-nav {
-    background-color: #0073e6; /* Vibrant blue for navigation */
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin-bottom: 40px; /* Spacing below the nav */
-}
-
-nav ul {
-    padding: 0;
-    list-style: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 30px;
-}
-
-a {
-    text-decoration: none;
-    color: #ffffff; /* White links for contrast */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
-}
-
-a:hover {
-    color: #ffcc00; /* Gold color on hover */
-    transform: scale(1.1); /* Scale up effect */
 }
 
 /* Headings */
 h1 {
     font-size: 3em; /* Larger heading for impact */
-    color: #0073e6; /* Main heading color */
+    color: #ffffff; /* White color for contrast */
     text-align: center; /* Center align */
     margin: 20px 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
 }
 
 h2 {
     font-size: 2em; /* Slightly smaller for subheading */
-    color: #005bb5; /* Darker blue for subheading */
+    color: #ffffff; /* White for contrast */
     text-align: center;
     margin: 20px 0;
 }
@@ -59,16 +28,18 @@ h2 {
 p {
     font-size: 1.2em;
     line-height: 1.6em;
-    color: #555; /* Slightly lighter grey for text */
+    color: #f0f4f8; /* Light text color for contrast against dark background */
     text-align: center; /* Center align for a more dynamic look */
 }
 
 /* Container */
 .container {
     padding: 40px;
-    background-color: #ffffff; /* White background for content */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for contrast */
-    border-radius: 8px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency for overlay effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for contrast */
+    border-radius: 15px; /* More pronounced rounded corners */
+    max-width: 800px; /* Max width for content */
+    margin: 40px auto; /* Centering the container */
     transition: transform 0.3s ease; /* Smooth scaling effect */
 }
 
@@ -76,22 +47,11 @@ p {
     transform: translateY(-5px); /* Slight lift on hover */
 }
 
-/* Image Container */
-.image-container {
-    text-align: center; /* Center images */
-    margin: 20px 0;
-}
-
-.image-credit {
-    font-size: 0.8em;
-    color: #777; /* Lighter text for credits */
-}
-
 /* Footer */
 footer {
     border-top: 1px solid #e1e1e1;
     font-size: 0.9em;
-    color: #777;
+    color: #ffffff; /* White color for contrast */
     padding-top: 20px;
     margin-top: 40px;
     text-align: center; /* Centered footer text */
@@ -108,22 +68,17 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #555; /* Footer link color */
+    color: #f0f4f8; /* Light footer link color */
 }
 
 footer ul li a:hover {
-    color: #0073e6; /* Blue on hover */
+    color: #ffcc00; /* Gold color on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
         width: 95%; /* Full width on smaller screens */
-    }
-
-    nav ul li {
-        display: block; /* Stack nav items */
-        margin: 10px 0; /* Spacing between items */
     }
 
     h1, h2, p {
