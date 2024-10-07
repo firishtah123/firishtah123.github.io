@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    background: linear-gradient(135deg, #0073e6, #ffcc00); /* Vibrant gradient background */
+    background: linear-gradient(135deg, #0073e6, #00cc99); /* Blue to green gradient background */
     color: #fff; /* White text for contrast */
 }
 
@@ -68,4 +68,3 @@ footer a:hover {
         padding: 20px; /* Reduce padding on smaller screens */
     }
 }
-
