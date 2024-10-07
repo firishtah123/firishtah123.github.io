@@ -1,92 +1,70 @@
 /* Global Styles */
 body {
     margin: 0;
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    background-image: url('/Users/firishtah/Desktop/gis-masters.jpg'); /* Background image with full path */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-image: url('/Users/firishtah/Desktop/gis-masters.jpg'); /* Background image */
     background-size: cover; /* Cover the entire body */
     background-position: center; /* Center the background image */
     color: #fff; /* White text for contrast */
-}
-
-/* Headings */
-h1 {
-    font-size: 3em; /* Larger heading for impact */
-    color: #ffffff; /* White color for main heading */
-    text-align: center; /* Center align */
-    margin: 20px 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
-}
-
-h2 {
-    font-size: 2em; /* Slightly smaller for subheading */
-    color: #ffcc00; /* Gold color for subheading */
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Paragraphs */
-p {
-    font-size: 1.2em;
-    line-height: 1.6em;
-    color: #ffffff; /* White text for contrast */
-    text-align: center; /* Center align for a more dynamic look */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
 }
 
 /* Container */
 .container {
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency for content */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for contrast */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background for contrast */
     border-radius: 15px; /* Rounded corners */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
-    max-width: 800px; /* Maximum width for the container */
-    margin: auto; /* Center the container */
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    text-align: center; /* Center text */
 }
 
-.container:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
+/* Headings */
+h1 {
+    font-size: 3.5em; /* Larger heading for impact */
+    margin-bottom: 10px; /* Space below heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+}
+
+h2 {
+    font-size: 2.5em; /* Slightly smaller for subheading */
+    margin-bottom: 20px; /* Space below subheading */
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2em; /* Standard font size */
+    line-height: 1.6em; /* Line height for readability */
+    margin: 10px 0; /* Space between paragraphs */
 }
 
 /* Footer */
 footer {
-    border-top: 1px solid #e1e1e1;
-    font-size: 0.9em;
-    color: #ffffff; /* White footer text */
-    padding-top: 20px;
-    margin-top: 40px;
-    text-align: center; /* Centered footer text */
+    margin-top: 30px; /* Space above footer */
 }
 
-footer ul {
-    padding: 0;
-    list-style: none;
+footer a {
+    color: #ffcc00; /* Gold color for links */
+    text-decoration: none; /* Remove underline */
 }
 
-footer ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-footer ul li a {
-    color: #ffffff; /* Footer link color */
-}
-
-footer ul li a:hover {
-    color: #ffcc00; /* Gold on hover */
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    body {
-        width: 100%; /* Full width on smaller screens */
+    h1 {
+        font-size: 2.5em; /* Adjust font sizes for smaller screens */
     }
 
-    h1, h2, p {
-        font-size: 1.5em; /* Adjust font sizes for smaller screens */
+    h2 {
+        font-size: 1.8em;
     }
 
-    .container {
-        padding: 20px; /* Reduce padding on smaller screens */
+    p {
+        font-size: 1em; /* Smaller text for better fit */
     }
 }
-
