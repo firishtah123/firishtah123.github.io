@@ -2,9 +2,7 @@
 body {
     margin: 0;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    background-image: url('/Users/firishtah/Desktop/gis-masters.jpg'); /* Background image */
-    background-size: cover; /* Cover the entire body */
-    background-position: center; /* Center the background image */
+    background: linear-gradient(135deg, #0073e6, #ffcc00); /* Vibrant gradient background */
     color: #fff; /* White text for contrast */
 }
 
@@ -70,3 +68,4 @@ footer a:hover {
         padding: 20px; /* Reduce padding on smaller screens */
     }
 }
+
