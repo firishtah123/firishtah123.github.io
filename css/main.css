@@ -1,53 +1,55 @@
 /* Global Styles */
 body {
     margin: 0;
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     background-image: url('/Users/firishtah/Desktop/gis-masters.jpg'); /* Background image */
     background-size: cover; /* Cover the entire body */
     background-position: center; /* Center the background image */
     color: #fff; /* White text for contrast */
-    display: flex; /* Use flexbox to center content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+h1 {
+    font-size: 3em; /* Larger heading for impact */
+    color: #ffffff; /* White color for main heading */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+}
+
+p {
+    font-size: 1.5em; /* Slightly larger text for readability */
+    text-align: center; /* Center align for a more dynamic look */
 }
 
 /* Container */
 .container {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background for contrast */
-    border-radius: 15px; /* Rounded corners */
     padding: 40px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-    text-align: center; /* Center text */
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency for content */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Deeper shadow for contrast */
+    border-radius: 15px; /* Rounded corners */
+    max-width: 800px; /* Maximum width for the container */
+    margin: auto; /* Center the container */
 }
 
-/* Headings */
-h1 {
-    font-size: 3.5em; /* Larger heading for impact */
-    margin-bottom: 10px; /* Space below heading */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
-}
-
-h2 {
-    font-size: 2.5em; /* Slightly smaller for subheading */
-    margin-bottom: 20px; /* Space below subheading */
-}
-
-/* Paragraphs */
-p {
-    font-size: 1.2em; /* Standard font size */
-    line-height: 1.6em; /* Line height for readability */
-    margin: 10px 0; /* Space between paragraphs */
+/* Intro Section */
+.intro {
+    margin: 20px 0; /* Space around intro */
 }
 
 /* Footer */
 footer {
-    margin-top: 30px; /* Space above footer */
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #ffffff; /* White footer text */
 }
 
 footer a {
-    color: #ffcc00; /* Gold color for links */
-    text-decoration: none; /* Remove underline */
+    color: #ffcc00; /* Gold for email link */
 }
 
 footer a:hover {
@@ -56,15 +58,15 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.5em; /* Adjust font sizes for smaller screens */
+    body {
+        width: 100%; /* Full width on smaller screens */
     }
 
-    h2 {
-        font-size: 1.8em;
+    h1, p {
+        font-size: 1.5em; /* Adjust font sizes for smaller screens */
     }
 
-    p {
-        font-size: 1em; /* Smaller text for better fit */
+    .container {
+        padding: 20px; /* Reduce padding on smaller screens */
     }
 }
